@@ -1,0 +1,1174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+		<title>JsDoc Reference - Contracts</title>
+
+        <link rel="stylesheet" href="../static/default.css" type="text/css" media="screen" charset="utf-8" />
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+        
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			
+<div>
+  <a href="../files.html">File Index</a> <br/>
+  <a href="../index.html">Class Index</a>
+</div><br/>
+<h2>Classes</h2>
+<ul class="classList">
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><a href="../symbols/Contracts.html">Contracts</a></li>
+	
+	<li><a href="../symbols/Contracts.Contract.html">Contracts.Contract</a></li>
+	
+	<li><a href="../symbols/Contracts.ContractError.html">Contracts.ContractError</a></li>
+	
+</ul>
+
+			<!-- end publish.classesIndex -->
+		</div>
+		
+        <div id="symbolList">
+           <!-- constructor list -->
+           
+             <h3>
+                 Namespace 
+             </h3>
+             <ul>
+                <li  class="fixedFont">
+                  <a href="../symbols/Contracts.html">Contracts</a>
+                </li>
+             </ul>
+           
+           <!-- end constructor list -->
+
+           <!-- properties list -->
+           
+           
+             <h3>Variables</h3>
+             <ul>
+               
+                 <li class="fixedFont">
+                   <a href="../symbols/Contracts.html#.any">any</a>
+                 </li>
+               
+                 <li class="fixedFont">
+                   <a href="../symbols/Contracts.html#.bool">bool</a>
+                 </li>
+               
+                 <li class="fixedFont">
+                   <a href="../symbols/Contracts.html#.date">date</a>
+                 </li>
+               
+                 <li class="fixedFont">
+                   <a href="../symbols/Contracts.html#.fun">fun</a>
+                 </li>
+               
+                 <li class="fixedFont">
+                   <a href="../symbols/Contracts.html#.number">number</a>
+                 </li>
+               
+                 <li class="fixedFont">
+                   <a href="../symbols/Contracts.html#.object">object</a>
+                 </li>
+               
+                 <li class="fixedFont">
+                   <a href="../symbols/Contracts.html#.regex">regex</a>
+                 </li>
+               
+                 <li class="fixedFont">
+                   <a href="../symbols/Contracts.html#.string">string</a>
+                 </li>
+               
+                 <li class="fixedFont">
+                   <a href="../symbols/Contracts.html#.undef">undef</a>
+                 </li>
+               
+             </ul>
+           
+           <!-- end properties list -->
+
+           <!-- function summary -->
+           
+           
+             <h3>Functions</h3>
+             <ul>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.addSignature">addSignature</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.and">and</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.array">array</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.contract">contract</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.failure">failure</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.inst">inst</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.maybe">maybe</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.not">not</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.or">or</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.proc">proc</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.record">record</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.seq">seq</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.signatureToString">signatureToString</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.success">success</a>
+                    </li>
+               
+                   <li class="fixedFont">
+                        <a href="../symbols/Contracts.html#.test">test</a>
+                    </li>
+               
+             </ul>
+           
+           <!-- end function summary -->
+
+           <!-- events summary -->
+           
+           
+           <!-- end events summary -->
+        </div>
+
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				Namespace Contracts
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				
+				
+				
+					<br /><i>Defined in: </i> <a href="../symbols/src/src_contract.js.html">contract.js</a>.
+				
+			</p>
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Namespace Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>Contracts</b>
+				</div>
+				
+				<div class="description">
+					
+					
+				</div>
+				
+				
+				
+				
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+              <div class="details">
+				<div class="sectionTitle">
+					Field Detail
+				</div>
+				
+                  <div class="member">
+					<a name=".any"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; &lt;constant&gt; 
+                      </div>
+					
+					
+					<span class="light">Contracts.</span><b>any</b>
+					
+					</div>
+					<div class="description">
+						matches any input value.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+                  </div>
+				
+                  <div class="member">
+					<a name=".bool"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; &lt;constant&gt; 
+                      </div>
+					
+					
+					<span class="light">Contracts.</span><b>bool</b>
+					
+					</div>
+					<div class="description">
+						Boolean type matching contract.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+                  </div>
+				
+                  <div class="member">
+					<a name=".date"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; &lt;constant&gt; 
+                      </div>
+					
+					
+					<span class="light">Contracts.</span><b>date</b>
+					
+					</div>
+					<div class="description">
+						Date type matching contract.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+                  </div>
+				
+                  <div class="member">
+					<a name=".fun"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; &lt;constant&gt; 
+                      </div>
+					
+					
+					<span class="light">Contracts.</span><b>fun</b>
+					
+					</div>
+					<div class="description">
+						Function type matching contract (no testing of input or output to function)
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+                  </div>
+				
+                  <div class="member">
+					<a name=".number"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; &lt;constant&gt; 
+                      </div>
+					
+					
+					<span class="light">Contracts.</span><b>number</b>
+					
+					</div>
+					<div class="description">
+						Number type matching contract.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+                  </div>
+				
+                  <div class="member">
+					<a name=".object"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; &lt;constant&gt; 
+                      </div>
+					
+					
+					<span class="light">Contracts.</span><b>object</b>
+					
+					</div>
+					<div class="description">
+						contract matching any object.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+                  </div>
+				
+                  <div class="member">
+					<a name=".regex"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; &lt;constant&gt; 
+                      </div>
+					
+					
+					<span class="light">Contracts.</span><b>regex</b>
+					
+					</div>
+					<div class="description">
+						RegExp type matching contract.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+                  </div>
+				
+                  <div class="member">
+					<a name=".string"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; &lt;constant&gt; 
+                      </div>
+					
+					
+					<span class="light">Contracts.</span><b>string</b>
+					
+					</div>
+					<div class="description">
+						String type matching contract.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+                  </div>
+				
+                  <div class="member">
+					<a name=".undef"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; &lt;constant&gt; 
+                      </div>
+					
+					
+					<span class="light">Contracts.</span><b>undef</b>
+					
+					</div>
+					<div class="description">
+						contract matching "undefined".
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+                  </div>
+				
+              </div>
+			
+
+<!-- ============================== method details ========================= -->		
+			
+              <div class="details">
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+                  <div class="member">
+					<a name=".addSignature"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>addSignature</b>(sig, obj)
+					
+					</div>
+					<div class="description">
+						Adds a Signature to a given Object/Namespace/Class.  The signature
+itself is an object with every field having a type description for each
+method/field to annotate in the input object.  Fields
+(variables/constants) are tested with the given contract and methods
+are overwritten using AOP to do type checking first when called.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>sig</b>
+									
+								</dt>
+								<dd>signature to add to object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>obj</b>
+									
+								</dt>
+								<dd>the object to annotate</dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									 <b></b>
+								</dt>
+								<dd>Error if a symbol in sig is not found in obj or a field/constant
+              in object has a wrong type.</dd>
+							
+							</dl>
+						
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".and"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>and</b>()
+					
+					</div>
+					<div class="description">
+						is the conjunctive contract combinator.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>tsts...</b>
+									
+								</dt>
+								<dd>list of contracts</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>new conjunctive contract (all input contracts must success)</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".array"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>array</b>(t)
+					
+					</div>
+					<div class="description">
+						ad hoc polymorphic array contract.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>t</b>
+									
+								</dt>
+								<dd>type every array element must have</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>new contract testing each element in a given array with t.</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".contract"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>contract</b>()
+					
+					</div>
+					<div class="description">
+						create a contract testing function by building a product type contract
+from given contracts.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>contracts...</b>
+									
+								</dt>
+								<dd>input contracts to build product type contract from</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>testing function wich throws ContractError if given arguments
+        don't match given contracts else true.</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".failure"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>failure</b>(c)
+					
+					</div>
+					<div class="description">
+						tests if contract did not matched a given type.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>c</b>
+									
+								</dt>
+								<dd>contract application result</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>true if contract test was not successful</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".inst"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>inst</b>(x)
+					
+					</div>
+					<div class="description">
+						contract testing if input argument is instance of a given class.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Class}</span> <b>x</b>
+									
+								</dt>
+								<dd>the class inputs must be instance of</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>new contract</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".maybe"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>maybe</b>(tst)
+					
+					</div>
+					<div class="description">
+						creates contract from given one which will match null successfully.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>tst</b>
+									
+								</dt>
+								<dd>input contract for case input is not null @return new
+contract using input contract if input value is not null</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".not"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>not</b>(tst)
+					
+					</div>
+					<div class="description">
+						inverts success and failure of a contract.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>tst</b>
+									
+								</dt>
+								<dd>a contract to create the complement for</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>new complement contract of input contract</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".or"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>or</b>()
+					
+					</div>
+					<div class="description">
+						is the disjunctive contract combinator.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>tsts...</b>
+									
+								</dt>
+								<dd>list of contracts</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>new disjunctive contract (just one of the given contracts must
+                                  match successfully)</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".proc"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>proc</b>()
+					
+					</div>
+					<div class="description">
+						Describe the signature of a function. The last function argument is used to
+be the functions return value type.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>types...</b>
+									
+								</dt>
+								<dd>list of type descriptions. Last one is the function's
+                return type.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>type description for functions</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".record"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>record</b>(R)
+					
+					</div>
+					<div class="description">
+						record creates a contract from a given Object with each field in the
+object having a type description. When testing the contract the input
+is tested for each field in the type pattern object. If the testing
+object has a missing field or a type mismatch in any field is found the
+contract will fail.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>R</b>
+									
+								</dt>
+								<dd>object with field type description.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>a new contract testing the structure of its values</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".seq"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>seq</b>()
+					
+					</div>
+					<div class="description">
+						creates a product type contract.<br/>
+for example seq(string,number) creates a 
+contract for arguments list [string,number].
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>contracts...</b>
+									
+								</dt>
+								<dd>input contracts to build product type contract from</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>new product type contract.</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".signatureToString"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>signatureToString</b>(S)
+					
+					</div>
+					<div class="description">
+						creates a String from a given Signature.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>S</b>
+									
+								</dt>
+								<dd>the signature to create String for</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>description String</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".success"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>success</b>(c)
+					
+					</div>
+					<div class="description">
+						tests if contract matched a given type.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>c</b>
+									
+								</dt>
+								<dd>contract application result</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>true if contract test was successful</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+                  <div class="member">
+					<a name=".test"> </a>
+					<div class="fixedFont">
+                      <div class="modifiers">&lt;static&gt; 
+                      </div>
+					
+					<span class="light">Contracts.</span><b>test</b>()
+					
+					</div>
+					<div class="description">
+						create a contract testing function by building a product type contract
+from given contracts
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>contract...</b>
+									
+								</dt>
+								<dd>input contract to build a product type contract from</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>testing function which will return true if given arguments
+        match and false else.</dd>
+							
+							</dl>
+						
+						
+						
+
+                  </div>
+				
+              </div>
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both;text-align:center">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.3.2 on Thu Mar 04 2010 01:45:11 GMT+0100 (MEZ)
+		</div>
+	</body>
+</html>
