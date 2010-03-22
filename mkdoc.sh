@@ -1,3 +1,4 @@
 #!/bin/sh
 
-jsrun.sh -d=docs -t="$JSDOCDIR/templates/jsdoc-simple" src/*.js
+jsrun.sh -c='jsdoc.conf' -t="$JSDOCDIR/templates/jsdoc-simple" src
+#jsrun.sh -c='jsdoc.conf' -t="$JSDOCDIR/templates/jsdoc" src
