@@ -35,11 +35,6 @@ In order to build the documentation you will need:
 - [jsdoc simple template](http://github.com/urso/jsdoc-simple):  
   just copy 'jsdoc-simple' directory to jsdoc toolkit's template directory
 
-- [pandoc](http://johnmacfarlane.net/pandoc/installing.html):  
-  used to preprocess static documentation files. Alternatively you can use any
-  other markdown preprocessor and update jsdoc.conf in the source directory 
-  to use that preprocessor instead of pandoc.
-
 - run './mkdoc' shell command (needs *nix shell).
 
 Usage
@@ -70,7 +65,7 @@ function. For example:
     }
 
 Also you can transform a Signature description to a String for printing with
-**Contracts.signatureToString(<signature>)** or ask for a type description's
+**Contracts.signatureToString(&lt;signature&gt;)** or ask for a type description's
 string representation by reading the 'description' field.  
 For Example:
 
@@ -99,7 +94,7 @@ For Example:
     //     }"
 
 To mix in a signature into a namespace/object/class use 
-Contracts.addSignature(\<signature\>, \<object/namespace\>).
+Contracts.addSignature(&lt;signature&gt;, &lt;object/namespace&gt;).
 
 ## Primitives
 
@@ -138,7 +133,7 @@ For example:
 Null pointer, the billion dollar mistake. All primitive contracts but
 **Contracts.any** will fail, if a null value is passed in. If you still want
 to use null in some locations you have to use the 
-**Contracts.maybe(\<type\>)** modifier. For example
+**Contracts.maybe(&lt;type&gt;)** modifier. For example
 
     maybe(string) // this contract will match only string and null
 
