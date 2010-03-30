@@ -68,8 +68,14 @@ var Contracts = new function () {
             return test(arg) ? this : new Contracts.ContractError(description, arg);
         };
 
-        return this;
     };
+
+    function isInstanceOf(obj, clazz) {
+        return obj instanceof clazz || 
+               (obj &&
+                obj['constructor'] !== undefined &&
+                obj.constructor.toString() === clazz.toString());
+    }
         
     /**
      * matches any input value.
@@ -87,7 +93,7 @@ var Contracts = new function () {
      * @return true if contract test was successful
      */
     this.success = function (c) {
-        return c instanceof Contracts.Contract;
+        return isInstanceOf(c, Contracts.Contract);
     };
     
     /**
@@ -97,7 +103,7 @@ var Contracts = new function () {
      * @return true if contract test was not successful
      */
     this.failure = function (c) {
-        return c instanceof Contracts.ContractError;
+        return isInstanceOf(c, Contracts.ContractError);
     };
     
     var Contract = this.Contract;
@@ -114,7 +120,7 @@ var Contracts = new function () {
      */
     this.inst = function (x) {
         return new this.Contract(function (arg) { 
-                return arg instanceof x; 
+                return isInstanceOf(arg, x);
             }, "instance of " + x.name);
     };
     
@@ -228,11 +234,11 @@ var Contracts = new function () {
         var test;
         if (tst === any) {
             test = function (arg) { 
-                return arg instanceof Array; 
+                return isInstanceOf(arg, Array)
             };
         } else {
             test = function (arg) {
-                if (!(arg instanceof Array)) {
+                if (!isInstanceOf(arg, Array)) {
                     return false;
                 }
                     
@@ -259,7 +265,7 @@ var Contracts = new function () {
      * @return new product type contract.
      */
     this.seq = function () {
-        var cs = arguments.length === 1 && arguments[0] instanceof Array ?
+        var cs = arguments.length === 1 && isInstanceOf(arguments[0], Array) ?
         arguments[0] : arguments;
             
         if (cs.length === 1) {
@@ -328,7 +334,7 @@ var Contracts = new function () {
      */
     this.record = function (R) {
         function test(arg) {
-            if (!(arg instanceof Object)) {
+            if (!isInstanceOf(arg, Object)) {
                 return arg;
             }
                 
@@ -437,7 +443,7 @@ var Contracts = new function () {
             }
             
             var ret = proceed.apply(this, args);
-            if (signature.ret instanceof Contracts.ProcContract) {
+            if (isInstanceOf(signature.ret, Contracts.ProcContract)) {
                 if (typeof ret !== 'function') {
                     throw new Error("output type mismatch in " + symb + 
                                     ": " + signature.ret.description +
@@ -484,7 +490,7 @@ var Contracts = new function () {
             //check if signature and objects symbol
             //type match
             
-            if (typeof obj[symb] === 'function' && sig[symb] instanceof Contracts.ProcContract) {
+            if (typeof obj[symb] === 'function' && isInstanceOf(sig[symb], Contracts.ProcContract)) {
                 var fn = mk_testFnContract(sig[symb], symb);
                 fn.$sigFn = true;
                 
