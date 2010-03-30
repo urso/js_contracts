@@ -57,18 +57,26 @@ var Contracts = new function () {
          * */
         this.description = description;
         
-        /**
-         * Tests the given arguments and throws error if type mismatch is found
-         *
-         * @param arg Array of arguments to test
-         * @return the Contract element itself or a new ContractError(not
-         *         thrown) element on error
-         */
-        this.run = function (arg) {
-            return test(arg) ? this : new Contracts.ContractError(description, arg);
-        };
-
     };
+
+    /**
+     * Tests the given arguments and throws error if type mismatch is found
+     *
+     * @param arg Array of arguments to test
+     * @return the Contract element itself or a new ContractError(not
+     *         thrown) element on error
+     */
+    this.Contract.prototype.run = function(arg) {
+        return this.test(arg) ? this : new Contracts.ContractError(this.description, arg);
+    }
+
+    this.Contract.prototype.assert = function(arg) {
+        var r = this.run(arg);
+        if (Contracts.failure(r)) {
+            throw r;
+        }
+        return r;
+    }
 
     function isInstanceOf(obj, clazz) {
         return obj instanceof clazz || 
